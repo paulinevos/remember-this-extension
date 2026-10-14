@@ -1,0 +1,23 @@
+@import './app.css';
+
+@source '..';
+
+/* Fraunces backs --font-display. The app self-hosts it through Vite::fonts(),
+   which extension pages cannot use, so the extension ships the same file. */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/fraunces-400-latin.woff2') format('woff2');
+}
+
+@layer base {
+    html {
+        background-color: var(--color-canvas);
+    }
+
+    html[data-theme='dark'] {
+        background-color: var(--color-canvas-dark);
+    }
+}

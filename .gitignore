@@ -1,0 +1,10 @@
+node_modules/
+dist/
+build/
+xcuserdata/
+*.xcuserstate
+.env
+.env.*
+!.env.example
+.DS_Store
+/Remember This/
